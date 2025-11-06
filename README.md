@@ -74,4 +74,6 @@ To create a release, an appropriately named tag needs to be pushed to the `main`
 
 ## Signing and Notarizing on macOS
 
+`By default at CBI, we've not enabled codesigning for this yet, if you're using this you can locally sign it yourself.`
+
 Basic concepts of codesigning and notarization on macOS are explained in the correspodning [Wiki article](https://github.com/obsproject/obs-plugintemplate/wiki/Codesigning-On-macOS) which has a specific section for the [GitHub Actions setup](https://github.com/obsproject/obs-plugintemplate/wiki/Codesigning-On-macOS#setting-up-code-signing-for-github-actions).
