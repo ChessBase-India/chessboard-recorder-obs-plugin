@@ -33,7 +33,7 @@
     },
     "platformConfig": {
         "macos": {
-            "bundleId": "com.example.plugintemplate-for-obs"
+            "bundleId": "in.chessbase.cbi-chessboard-plugin-for-obs"
         }
     },
     "name": "cbi-chessboard-plugin-for-obs",
@@ -41,5 +41,6 @@
     "version": "1.0.0",
     "author": "ChessBase India 64 Squares Private Limited",
     "website": "https://chessbase.in",
-    "email": "chessbaseindiatech@gmail.com"
+    "email": "chessbaseindiatech@gmail.com",
+    "httpPort": 4343
 }

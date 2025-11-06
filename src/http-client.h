@@ -16,8 +16,20 @@ You should have received a copy of the GNU General Public License along
 with this program. If not, see <https://www.gnu.org/licenses/>
 */
 
-#include <plugin-support.h>
+#pragma once
 
-const char *PLUGIN_NAME = "@CMAKE_PROJECT_NAME@";
-const char *PLUGIN_VERSION = "@CMAKE_PROJECT_VERSION@";
-const int HTTP_PORT = @HTTP_PORT@;
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+#include <curl/curl.h>
+
+/**
+ * Sends a POST request to the specified endpoint on localhost:<httpPort>
+ * @param endpoint The endpoint path (e.g., "/recording/start" or "/recording/stop")
+ */
+void send_recording_request(const char *endpoint);
+
+#ifdef __cplusplus
+}
+#endif
