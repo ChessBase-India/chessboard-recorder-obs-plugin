@@ -1,6 +1,6 @@
 /*
-Plugin Name
-Copyright (C) <Year> <Developer> <Email Address>
+CBI Chessboard Plugin for OBS
+Copyright (C) <2025> <ChessBase India 64 Squares Private Limited> <chessbaseindiatech@gmail.com>
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

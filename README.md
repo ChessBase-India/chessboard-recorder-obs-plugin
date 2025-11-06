@@ -1,12 +1,30 @@
-# OBS Plugin Template
+# CBI Chessboard Plugin for OBS
 
 ## Introduction
 
-The plugin template is meant to be used as a starting point for OBS Studio plugin development. It includes:
+OBS plugin to support syncing of CBI Chessboard Recorder with OBS record button.
 
-* Boilerplate plugin source code
-* A CMake project file
-* GitHub Actions workflows and repository actions
+On Pressing below keys in OBS UI:
+1. "Start Recording" -> POST localhost:`PORT`/recording/start
+2. "Stop Recording" -> POST localhost:`PORT`/recording/stop
+
+### PORT
+`PORT` is defined in [buildspec.json](./buildspec.json) as `httpPort`. See  for the configured port value (edit before building to change the port).
+
+### FRONTEND UI FLAG
+Since, this plugin interacts with OBS Frontend UI, we need to enable `ENABLE_FRONTEND_API` and set it to `true` in [CMakePresets.json](./CMakePresets.json), in this repo we've already enabled it as default for all build presets.
+
+Example:
+
+    {
+      "name": "template",
+      "hidden": true,
+      "cacheVariables": {
+        // This needs to be true
+        "ENABLE_FRONTEND_API": true,
+        "ENABLE_QT": false
+      }
+    }
 
 ## Supported Build Environments
 
