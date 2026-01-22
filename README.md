@@ -30,7 +30,7 @@ Example:
 
 | Platform  | Tool   |
 |-----------|--------|
-| Windows   | Visal Studio 17 2022 |
+| Windows   | Visual Studio 17 2022 |
 | macOS     | XCode 16.0 |
 | Windows, macOS  | CMake 3.30.5 |
 | Ubuntu 24.04 | CMake 3.28.3 |
